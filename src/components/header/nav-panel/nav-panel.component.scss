@@ -1,0 +1,87 @@
+.NavPanel {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  z-index: 100;
+  align-items: center;
+
+  width: 100vw;
+  background-color: rgb(17, 17, 17);
+
+  padding: 1rem;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__ul {
+    font-family: "Pacifico", cursive;
+    font-size: 1.2rem;
+
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  & li {
+    border-radius: 3rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    & a {
+      position: relative;
+      text-decoration: none;
+      color: rgb(253, 253, 253);
+    }
+
+    & a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: rgb(253, 253, 253);
+      width: 0;
+      transition: width 0.8s ease;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    & a:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .NavPanel {
+  }
+}
+
+@media (max-width: 900px) {
+  .NavPanel__ul {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .NavPanel__ul {
+    display: none;
+  }
+}

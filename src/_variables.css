@@ -1,0 +1,14 @@
+:root {
+  --filter-img: brightness(0) saturate(100%) invert(11%) sepia(79%)
+    saturate(5048%) hue-rotate(250deg) brightness(95%) contrast(93%);
+  --filter-icon: brightness(0) saturate(100%) invert(100%) sepia(56%)
+    saturate(0%) hue-rotate(350deg) brightness(114%) contrast(98%);
+
+  --bg-header: rgb(17, 17, 17);
+  --color-title: rgb(253, 253, 253);
+  --filter-logo: brightness(0) saturate(100%) invert(53%) sepia(66%)
+    saturate(887%) hue-rotate(324deg) brightness(96%) contrast(93%);
+
+  --filter-logo-bg: brightness(0) saturate(100%) invert(60%) sepia(90%)
+    saturate(2677%) hue-rotate(327deg) brightness(99%) contrast(87%);
+}

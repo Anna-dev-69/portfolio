@@ -1,0 +1,14 @@
+.Triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &__line {
+    width: 3rem;
+    border: 1px solid rgb(237, 111, 86);
+  }
+  & img {
+    filter: var(--filter-logo);
+  }
+}

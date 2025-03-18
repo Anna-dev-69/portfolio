@@ -1,0 +1,85 @@
+.MySkills {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 36, 46);
+  align-items: center;
+  gap: 5rem;
+
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+
+  &__title {
+    font-size: 4rem;
+    color: var(--color-title);
+  }
+
+  &__ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 3rem 3rem;
+    width: 1200px;
+    margin-top: 3rem;
+    padding: 1rem;
+    overflow: visible;
+  }
+
+  &__ul-li {
+    border: 2px solid rgb(253, 253, 253);
+    padding: 1.8rem;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+  &__ul-li:hover {
+    transform: scale(1.1);
+
+    box-shadow: 0px 0px 5px 2px rgb(237, 111, 86);
+    transition: transform 300ms, box-shadow 300ms;
+  }
+
+  &__title-skills {
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .MySkills__ul {
+    grid-template-columns: repeat(3, 1fr);
+    width: 800px;
+  }
+  .MySkills__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .MySkills__ul {
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .MySkills {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .MySkills__title {
+    font-size: 2rem;
+  }
+
+  .MySkills__subtitle {
+    font-size: 1.2rem;
+  }
+  .MySkills__ul {
+    grid-template-columns: 1fr;
+    width: 350px;
+  }
+}

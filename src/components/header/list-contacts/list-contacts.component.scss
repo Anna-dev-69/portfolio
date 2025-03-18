@@ -1,0 +1,22 @@
+.ListContacts {
+  display: flex;
+  gap: 1rem;
+
+  &__item {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    & img {
+      filter: var(--filter-icon);
+    }
+    transition: filter 300ms;
+  }
+
+  &__item:hover {
+    filter: var(--filter-logo-bg);
+  }
+}
