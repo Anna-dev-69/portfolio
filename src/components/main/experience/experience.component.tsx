@@ -1,11 +1,22 @@
 import "./experience.component.scss";
-
 import Triangle from "../triangle/triangle.component";
-import experienceList from "../../../data/experience-list";
-import { useState } from "react";
+import experienceList, { IExperienceList } from "../../../data/experience-list";
+import { useRef, useState } from "react";
+import SliderComponent from "./slider/slider.component";
 
 const Experience = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const ulRef = useRef<HTMLUListElement>(null);
+
+  const scrollByItem = (direction: "next" | "prev") => {
+    if (!ulRef.current) return;
+
+    const itemWidth = ulRef.current.firstElementChild?.clientWidth! + 16 || 0;
+
+    ulRef.current.scrollBy({
+      left: direction === "next" ? itemWidth : -itemWidth,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div id="Experience" className="Experience">
@@ -14,25 +25,21 @@ const Experience = () => {
           Experience
         </div>
         <Triangle />
-        <ul className="Experience__ul" style={{ gap: "1rem" }}>
-          {experienceList.map((item) => (
-            <li
-              onMouseLeave={() => setIsHovered(true)}
-              style={isHovered ? { transition: "all 500ms" } : {}}
-              className="Experience__li"
-              key={item.id}
-            >
-              <a href={item.href}>
-                <img
-                  className="Experience__img"
-                  style={{ width: "100%" }}
-                  src={item.imgSrc}
-                  alt=""
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="Experience__container-slider">
+          <button
+            className="Experience__btn"
+            onClick={() => scrollByItem("prev")}
+          >
+            Prev
+          </button>
+          <SliderComponent ulRef={ulRef} experienceList={experienceList} />
+          <button
+            className="Experience__btn"
+            onClick={() => scrollByItem("next")}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
