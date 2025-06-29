@@ -8,7 +8,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    align-items: center;
   }
 
   &__btn {
@@ -27,6 +27,7 @@
   &__title {
     font-size: 4rem;
     color: var(--color-text);
+    margin-bottom: 6rem;
   }
 
   &__container-slider {
@@ -82,5 +83,12 @@
   .Experience__ul {
     grid-template-columns: 1fr;
     width: 350px;
+  }
+}
+
+@media (max-width: 530px) {
+  .Experience {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
   }
 }

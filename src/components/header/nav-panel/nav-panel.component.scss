@@ -7,7 +7,7 @@
   align-items: center;
 
   width: 100vw;
-  background-color: rgb(17, 17, 17);
+  background-color: rgba(8, 8, 8, 0.63);
 
   padding: 1rem;
 
@@ -34,29 +34,18 @@
   }
   & li {
     border-radius: 3rem;
-    padding: 0.7rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: background-color 300ms;
     & a {
       position: relative;
       text-decoration: none;
       color: rgb(253, 253, 253);
     }
+  }
 
-    & a::after {
-      content: "";
-      display: block;
-      height: 2px;
-      background-color: rgb(253, 253, 253);
-      width: 0;
-      transition: width 0.8s ease;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    & a:hover::after {
-      width: 100%;
-    }
+  & li:hover {
+    background-color: #d4c1ec1c;
   }
 }
 

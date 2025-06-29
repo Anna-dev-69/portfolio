@@ -7,9 +7,10 @@ import Certificates from "../certificates/certificates.component";
 const Main = () => {
   return (
     <div className="Main">
-      <MySkills />
       <AboutMe />
+
       <Experience />
+      <MySkills />
       <Certificates />
     </div>
   );

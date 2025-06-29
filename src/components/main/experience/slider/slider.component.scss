@@ -1,5 +1,5 @@
 .Slider {
-  width: 950px;
+  width: 800px;
   overflow: hidden;
   margin: 0 auto;
 
@@ -17,18 +17,25 @@
 
   &__li {
     flex: 0 0 auto;
-    width: 300px;
+    width: 800px;
+    height: 750px;
   }
 }
 
 @media (max-width: 1100px) {
   .Slider {
-    width: 630px;
+    width: 700px;
   }
 }
 
 @media (max-width: 815px) {
   .Slider {
-    width: 320px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Slider {
+    width: 400px;
   }
 }

@@ -7,6 +7,16 @@
   padding-top: 6rem;
   background-color: rgb(19, 21, 32);
 
+  // &__frame {
+  //   width: 400px;
+  //   height: 750px;
+  //   border: 3px solid #d4c1ec;
+  //   background-color: #f0f0f0;
+  //   position: absolute;
+  //   top: -20px;
+  //   left: 20px;
+  // }
+
   padding-bottom: 10rem;
 
   &__title {
@@ -43,43 +53,26 @@
 
     display: flex;
     width: 700px;
+    height: 900px;
 
     overflow: hidden;
-    & div {
-      height: 700px;
-      border-radius: 0.5rem;
-    }
+
     & img {
-      width: 400px;
+      width: 450px;
       border-radius: 0.5rem;
 
       cursor: pointer;
 
-      z-index: 1;
       transition: scale 500ms, z-index 500ms, filter 500ms;
-    }
-
-    & img:hover {
-      scale: 1.1;
-      z-index: 10;
-      filter: grayscale(0) brightness(1);
     }
   }
 
-  &__1 {
+  &__3 {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  &__2 {
-    position: absolute;
-    top: 5rem;
-    left: 4rem;
-  }
-  &__3 {
-    position: absolute;
-    top: 10rem;
-    left: 9rem;
+    z-index: 5;
   }
   &__4 {
   }
@@ -94,6 +87,17 @@
     gap: 1rem;
   }
 }
+
+.AboutMe__frame {
+  width: 450px;
+  height: 750px;
+  border: 7px solid #d4c1ec;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  z-index: 1;
+}
+
 @media (max-width: 1200px) {
   .AboutMe__container-about {
     padding-left: 3rem;

@@ -1,14 +1,23 @@
 import "./experience.component.scss";
 import experienceList, { IExperienceList } from "../../../data/experience-list";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import SliderComponent from "./slider/slider.component";
 import arrow from "../../../assets/arrow.svg";
+import ExperienceTrack from "./experience-track/experience-track.component";
 
 const Experience = () => {
   const ulRef = useRef<HTMLUListElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const scrollByItem = (direction: "next" | "prev") => {
     if (!ulRef.current) return;
+
+    const newIndex =
+      direction === "next"
+        ? Math.min(currentIndex + 1, experienceList.length - 1)
+        : Math.max(currentIndex - 1, 0);
+
+    setCurrentIndex(newIndex);
 
     const itemWidth = ulRef.current.firstElementChild?.clientWidth! + 16 || 0;
 
@@ -22,7 +31,7 @@ const Experience = () => {
     <div id="Experience" className="Experience">
       <div className="Experience__container">
         <div className="Experience__title" style={{ textAlign: "center" }}>
-          Experience
+          Projects
         </div>
 
         <div className="Experience__container-slider">
@@ -50,6 +59,7 @@ const Experience = () => {
             />
           </button>
         </div>
+        <ExperienceTrack currentIndex={currentIndex} />
       </div>
     </div>
   );

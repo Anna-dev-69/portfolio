@@ -5,7 +5,6 @@ import ExperienceCardComponent from "../experience-card/experience-card.componen
 
 interface SliderProps {
   experienceList: IExperienceList[];
-
   ulRef: React.RefObject<HTMLUListElement | null>;
 }
 
@@ -13,15 +12,17 @@ const Slider: React.FC<SliderProps> = (props) => {
   return (
     <div className="Slider">
       <ul className="Slider__ul" ref={props.ulRef}>
-        {props.experienceList.map((item) => (
-          <li key={item.id} className="Slider__li">
-            <ExperienceCardComponent
-              hrefDeploy={item.href}
-              hrefGit={item.hrefGit}
-              imgSrc={item.imgSrc}
-            />
-          </li>
-        ))}
+        {props.experienceList.map((item, index) => {
+          return (
+            <li key={item.id} className="Slider__li">
+              <ExperienceCardComponent
+                hrefDeploy={item.href}
+                hrefGit={item.hrefGit}
+                imgSrc={item.imgSrc}
+              />
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -12,18 +12,10 @@ const AboutMe = () => {
 
       <div className="AboutMe__container-about">
         <div className="AboutMe__container-img">
-          <div className="AboutMe__img">
-            <div>
-              <img className="AboutMe__1" src={photo1} alt="" />
-            </div>
-            <div>
-              <img className="AboutMe__2" src={photo2} alt="" />
-            </div>
-            <div>
-              <img className="AboutMe__3" src={photo4} alt="" />
-            </div>
-            <div className="AboutMe__overlay"></div>
+          <div>
+            <img className="AboutMe__3" src={photo4} alt="" />
           </div>
+          <div className="AboutMe__frame"></div>
         </div>
         <div className="AboutMe__text">
           <div>

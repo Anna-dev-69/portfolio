@@ -4,7 +4,7 @@ import s2 from "../../assets/s2.png";
 
 const Certificates = () => {
   return (
-    <div className="Certificates">
+    <div id="Certificates" className="Certificates">
       <div className="Certificates__container">
         <div className="Certificates__title">Certificates</div>
 

@@ -1,5 +1,7 @@
 import React from "react";
 import "./experience-card.component.scss";
+import internet from "../../../../assets/internet.svg";
+import git from "../../../../assets/github.svg";
 
 interface CardProps {
   imgSrc: string;
@@ -14,12 +16,13 @@ const ExperienceCard: React.FC<CardProps> = (props) => {
         <div className="Card__container-img">
           <img className="Card__container-img-img" src={props.imgSrc} alt="" />
         </div>
+
         <div className="Card__container-content">
           <a href={props.hrefDeploy} className="Card__title">
-            Deploy link
+            <img style={{ width: 30 }} src={internet} />
           </a>
           <a href={props.hrefGit} className="Card__title">
-            Github link
+            <img style={{ width: 30 }} src={git} />
           </a>
         </div>
       </div>

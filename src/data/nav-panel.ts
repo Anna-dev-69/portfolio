@@ -5,20 +5,29 @@ const navPanel = [
   },
 
   {
-    id: "MySkills",
-    href: "#MySkills",
-    title: "My skills",
-  },
-  {
     id: "AboutMe",
     href: "#AboutMe",
     title: "About me",
   },
+
   {
     id: "Experience",
     href: "#Experience",
-    title: "Experience",
+    title: "Projects",
   },
+
+  {
+    id: "MySkills",
+    href: "#MySkills",
+    title: "Skills",
+  },
+
+  {
+    id: "Certificates",
+    href: "#Certificates",
+    title: "Certificates",
+  },
+
   {
     id: "Contacts",
     href: "#Contacts",
