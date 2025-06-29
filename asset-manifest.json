@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c04ed28f.css",
-    "main.js": "/portfolio/static/js/main.ab67b7af.js",
+    "main.css": "/portfolio/static/css/main.68b0fcfb.css",
+    "main.js": "/portfolio/static/js/main.2c5aad71.js",
     "static/media/moon.png": "/portfolio/static/media/moon.9bc356962c7aa6a9415d.png",
     "static/media/loft.png": "/portfolio/static/media/loft.2765cdf52fb2d950bf03.png",
     "static/media/myProject2.png": "/portfolio/static/media/myProject2.225bed9d086644048b7a.png",
@@ -12,10 +12,10 @@
     "static/media/s2.png": "/portfolio/static/media/s2.5082b5186b8d52881660.png",
     "static/media/s1.png": "/portfolio/static/media/s1.3be6262930c623d3391b.png",
     "static/media/sliderNuts.png": "/portfolio/static/media/sliderNuts.0be9f4d0505265dc6ec6.png",
+    "static/media/photo11.jpg": "/portfolio/static/media/photo11.6ef51262da8590b197af.jpg",
     "static/media/4.jpg": "/portfolio/static/media/4.de9787d2cadc95fee483.jpg",
     "static/media/infinite.png": "/portfolio/static/media/infinite.b6f035a36b74dd345c36.png",
     "static/media/myTrello.png": "/portfolio/static/media/myTrello.f52213646c52ae94813b.png",
-    "static/media/22.jpg": "/portfolio/static/media/22.607de1e7958c58849d59.jpg",
     "static/media/todos.png": "/portfolio/static/media/todos.a921b80fa44a81f524f8.png",
     "static/media/biocad.png": "/portfolio/static/media/biocad.63411933d6c5c944d8e6.png",
     "static/media/node.svg": "/portfolio/static/media/node.4d8b9a0c5a604b6b68d3750273f913d6.svg",
@@ -25,7 +25,6 @@
     "static/media/vk.svg": "/portfolio/static/media/vk.f821f7b73720468f78f550eabaf6e957.svg",
     "static/media/whatsapp.svg": "/portfolio/static/media/whatsapp.0efcbba9630efcb98f1747edc1741e70.svg",
     "static/media/phone.svg": "/portfolio/static/media/phone.57c05e833ed8ff47076176850eaf8c4a.svg",
-    "static/media/triangle.svg": "/portfolio/static/media/triangle.3b7dd8517ea4c222c085a759b8bcc6c3.svg",
     "static/media/scss.svg": "/portfolio/static/media/scss.75b59ba2b55fe30cb2931a8ad343b8c6.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.ce81ad701070a7f1d0f6a8efbf47d1f0.svg",
     "static/media/address.svg": "/portfolio/static/media/address.ae187781e590caf2ecd5ee313ff90e5d.svg",
@@ -33,13 +32,14 @@
     "static/media/figma.svg": "/portfolio/static/media/figma.bea8c3d9ceeae18aa9ab87c9b198a183.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.2f21b72f7f289c5dd7ea35234685bd51.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.7e1ed881f8114dea93c8413d1e9a7153.svg",
     "static/media/database.svg": "/portfolio/static/media/database.0fe45e262054e61a14b5e40c36d02f87.svg",
     "static/media/email.svg": "/portfolio/static/media/email.bbff4ee765252491c81dafb36428660a.svg",
-    "main.c04ed28f.css.map": "/portfolio/static/css/main.c04ed28f.css.map",
-    "main.ab67b7af.js.map": "/portfolio/static/js/main.ab67b7af.js.map"
+    "main.68b0fcfb.css.map": "/portfolio/static/css/main.68b0fcfb.css.map",
+    "main.2c5aad71.js.map": "/portfolio/static/js/main.2c5aad71.js.map"
   },
   "entrypoints": [
-    "static/css/main.c04ed28f.css",
-    "static/js/main.ab67b7af.js"
+    "static/css/main.68b0fcfb.css",
+    "static/js/main.2c5aad71.js"
   ]
 }
