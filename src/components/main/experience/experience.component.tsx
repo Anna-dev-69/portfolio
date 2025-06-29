@@ -1,8 +1,8 @@
 import "./experience.component.scss";
-import Triangle from "../triangle/triangle.component";
 import experienceList, { IExperienceList } from "../../../data/experience-list";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import SliderComponent from "./slider/slider.component";
+import arrow from "../../../assets/arrow.svg";
 
 const Experience = () => {
   const ulRef = useRef<HTMLUListElement>(null);
@@ -24,20 +24,30 @@ const Experience = () => {
         <div className="Experience__title" style={{ textAlign: "center" }}>
           Experience
         </div>
-        <Triangle />
+
         <div className="Experience__container-slider">
           <button
             className="Experience__btn"
             onClick={() => scrollByItem("prev")}
           >
-            Prev
+            <img
+              style={{
+                width: 40,
+                transform: "rotate(180deg)",
+                filter: "var(--filter-img)",
+              }}
+              src={arrow}
+            />
           </button>
           <SliderComponent ulRef={ulRef} experienceList={experienceList} />
           <button
             className="Experience__btn"
             onClick={() => scrollByItem("next")}
           >
-            Next
+            <img
+              style={{ width: 40, filter: "var(--filter-img)" }}
+              src={arrow}
+            />
           </button>
         </div>
       </div>

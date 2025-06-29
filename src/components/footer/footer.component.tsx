@@ -1,5 +1,4 @@
 import ListContacts from "../header/list-contacts/list-contacts.component";
-import Triangle from "../main/triangle/triangle.component";
 import "./footer.component.scss";
 import phone from "../../assets/phone.svg";
 import email from "../../assets/email.svg";

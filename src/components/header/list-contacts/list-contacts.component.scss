@@ -11,12 +11,12 @@
     cursor: pointer;
 
     & img {
-      filter: var(--filter-icon);
+      filter: var(--filter-img);
     }
     transition: filter 300ms;
   }
 
   &__item:hover {
-    filter: var(--filter-logo-bg);
+    filter: var(--filter-icon);
   }
 }

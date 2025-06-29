@@ -33,9 +33,9 @@
 
     position: relative;
 
-    background: url("../../assets/22.jpg");
+    background: url("../../assets/photo11.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     width: 100%;
 
@@ -67,7 +67,7 @@
     display: flex;
     font-size: 100px;
     margin-bottom: 3rem;
-    color: rgb(247, 98, 69);
+    color: var(--color-text);
   }
 }
 @media (max-width: 1200px) {

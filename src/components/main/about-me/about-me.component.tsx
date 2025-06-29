@@ -2,18 +2,14 @@ import "./about-me.component.scss";
 
 import photo1 from "../../../assets/1.jpg";
 import photo2 from "../../../assets/2.jpg";
-import photo3 from "../../../assets/3.jpg";
 import photo4 from "../../../assets/4.jpg";
 import { useState } from "react";
-import Triangle from "../triangle/triangle.component";
 
 const AboutMe = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div id="AboutMe" className="AboutMe">
       <div className="AboutMe__title">About me</div>
-      <Triangle />
+
       <div className="AboutMe__container-about">
         <div className="AboutMe__container-img">
           <div className="AboutMe__img">

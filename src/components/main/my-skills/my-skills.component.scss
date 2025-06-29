@@ -10,7 +10,7 @@
 
   &__title {
     font-size: 4rem;
-    color: var(--color-title);
+    color: var(--color-text);
   }
 
   &__ul {
@@ -35,7 +35,7 @@
   &__ul-li:hover {
     transform: scale(1.1);
 
-    box-shadow: 0px 0px 5px 2px rgb(237, 111, 86);
+    box-shadow: 0px 0px 5px 2px #d4c1ec;
     transition: transform 300ms, box-shadow 300ms;
   }
 

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import mySkills from "../../../data/my-skills";
 import "./my-skills.component.scss";
-import Triangle from "../triangle/triangle.component";
 import basicSkills from "../../../data/basicSkills";
 
 const MySkills = () => {
@@ -10,7 +9,7 @@ const MySkills = () => {
   return (
     <div id="MySkills" className="MySkills">
       <div className="MySkills__title">My skills</div>
-      <Triangle />
+
       <div>
         <div className="MySkills__subtitle">Basic skills:</div>
         <ul className="MySkills__ul">
@@ -23,7 +22,7 @@ const MySkills = () => {
                 key={item.id}
               >
                 <img
-                  style={{ width: "7rem", filter: "var(--filter-logo)" }}
+                  style={{ width: "7rem", filter: "var(--filter-icon)" }}
                   src={item.imgSrc}
                   alt=""
                 />
@@ -48,7 +47,7 @@ const MySkills = () => {
                 key={item.id}
               >
                 <img
-                  style={{ width: "3rem", filter: "var(--filter-logo)" }}
+                  style={{ width: "3rem", filter: "var(--filter-icon)" }}
                   src={item.imgSrc}
                   alt=""
                 />
